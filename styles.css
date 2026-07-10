@@ -861,9 +861,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 0.8fr 1.2fr;
     gap: 3rem;
+    align-items: flex-start;
+}
+
+.about-content-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* About Avatar Image Container */
+.about-image-container {
+    position: relative;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    padding: 0.75rem;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    transition: border-color var(--transition-normal);
+}
+
+.about-image-container:hover {
+    border-color: var(--border-color-hover);
+}
+
+.about-avatar-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-glow-ring {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: calc(var(--radius-lg) + 4px);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    z-index: 1;
+    opacity: 0.2;
+    filter: blur(8px);
+    pointer-events: none;
 }
 
 .about-card-large {
