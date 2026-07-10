@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         writeTerminalLine('  Email: hamanthguru2005@gmail.com');
                         writeTerminalLine('  Phone: +91 8610047817');
                         writeTerminalLine('  GitHub: github.com/Hamanth-Off74');
-                        writeTerminalLine('  LinkedIn: linkedin.com/in/hamanth-a');
+                        writeTerminalLine('  LinkedIn: linkedin.com/in/hamanth-a-ba260a28a');
                         break;
                     case 'clear':
                         terminalBody.innerHTML = '';
