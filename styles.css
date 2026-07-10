@@ -1113,11 +1113,23 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-lg);
 }
 
-.project-img-placeholder {
+.project-img-wrapper {
     height: 180px;
-    background: linear-gradient(135deg, #090e18 0%, #030408 100%);
     position: relative;
+    overflow: hidden;
     border-bottom: 1px solid var(--border-color);
+    background: linear-gradient(135deg, #090e18 0%, #030408 100%);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.06);
 }
 
 .project-overlay-graphic {
@@ -1129,6 +1141,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(4, 6, 10, 0.4);
 }
 
 .tag {
