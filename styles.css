@@ -388,6 +388,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--bg-tertiary);
 }
 
+.nav-resume-btn {
+    padding: 0.45rem 0.95rem;
+    font-size: 0.85rem;
+    border-radius: var(--radius-md);
+    gap: 0.35rem;
+    border: 1px solid var(--border-color);
+}
+
 .theme-toggle .sun-icon {
     display: none;
 }
