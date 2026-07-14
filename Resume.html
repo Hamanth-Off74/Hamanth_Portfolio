@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamanth A - Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            line-height: 1.4;
+            padding: 40px;
+            background-color: #ffffff;
+            font-size: 13px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #1a365d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-weight: bold;
+            color: #4a5568;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            font-size: 11px;
+            color: #4a5568;
+        }
+        .contact-info a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .section-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1a365d;
+            border-bottom: 1.5px solid #1a365d;
+            padding-bottom: 2px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        p, li {
+            color: #2d3748;
+        }
+        .objective-text {
+            text-align: justify;
+        }
+        .edu-item, .proj-item {
+            margin-bottom: 10px;
+        }
+        .edu-header, .proj-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 2px;
+        }
+        .edu-sub, .proj-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #4a5568;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 3px;
+        }
+        .skill-line {
+            display: flex;
+        }
+        .skill-category {
+            font-weight: bold;
+            width: 160px;
+            color: #2d3748;
+            flex-shrink: 0;
+        }
+        .skill-val {
+            color: #4a5568;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+        .intern-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #2d3748;
+        }
+        .area-interest {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .interest-line {
+            display: flex;
+        }
+        .interest-label {
+            font-weight: bold;
+            width: 90px;
+            color: #2d3748;
+            flex-shrink: 0;
+        }
+        .interest-val {
+            color: #4a5568;
+        }
+        @media print {
+            body {
+                padding: 0;
+                font-size: 12px;
+            }
+            .section-title {
+                margin-top: 12px;
+                margin-bottom: 6px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hamanth A</h1>
+            <div class="subtitle">Full Stack Developer</div>
+            <div class="contact-info">
+                <a href="mailto:hamanthguru2005@gmail.com">hamanthguru2005@gmail.com</a> &nbsp;|&nbsp; 
+                <span>+91 8610047817</span> &nbsp;|&nbsp; 
+                <a href="https://linkedin.com/in/hamanth-a-ba260a28a" target="_blank">linkedin.com/in/hamanth-a-ba260a28a</a> &nbsp;|&nbsp; 
+                <a href="https://github.com/Hamanth-Off74" target="_blank">github.com/Hamanth-Off74</a>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-title">Objective</div>
+            <p class="objective-text">
+                Full Stack Developer with hands-on experience building end-to-end web applications using React, Node.js, Express.js, and MongoDB. Skilled in designing RESTful APIs, integrating third-party payment gateways, and managing version control with Git/GitHub. Strong foundation in OOP, with a focus on writing scalable, secure, and user-friendly code.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">Education</div>
+            <div class="edu-item">
+                <div class="edu-header">
+                    <span>B.E. Computer Science and Engineering</span>
+                    <span>Pursuing</span>
+                </div>
+                <div class="edu-sub">
+                    <span>Sri Shakthi Institute of Engineering and Technology</span>
+                    <span>CGPA: 7.55</span>
+                </div>
+            </div>
+            <div class="edu-item" style="margin-bottom: 0;">
+                <div class="edu-header">
+                    <span>Higher Secondary Certificate (HSC)</span>
+                    <span>2023</span>
+                </div>
+                <div class="edu-sub">
+                    <span>Vidhya Vikas Matric Higher Secondary School, State Board</span>
+                    <span>86%</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Skills</div>
+            <div class="skills-grid">
+                <div class="skill-line">
+                    <span class="skill-category">Technical Languages:</span>
+                    <span class="skill-val">Java</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Frontend:</span>
+                    <span class="skill-val">HTML, CSS, JavaScript, React.js</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Backend:</span>
+                    <span class="skill-val">Node.js, Express.js</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Database:</span>
+                    <span class="skill-val">MongoDB, SQL</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Tools & Platforms:</span>
+                    <span class="skill-val">Git, GitHub, VS Code, MS Office</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Core Concepts:</span>
+                    <span class="skill-val">Object-Oriented Programming (OOP)</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Soft Skills:</span>
+                    <span class="skill-val">Team Work, Quick Learner, Time Management</span>
+                </div>
+                <div class="skill-line">
+                    <span class="skill-category">Languages Known:</span>
+                    <span class="skill-val">English, Tamil</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Projects</div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span>Sweet Cravings — Full Stack Dessert E-Commerce Platform</span>
+                    <span>FEB-2025</span>
+                </div>
+                <div class="proj-sub">
+                    <span>React, Node.js, Express.js, MongoDB, Razorpay API, Git</span>
+                </div>
+                <ul>
+                    <li>Developed a full-stack dessert ordering website that allows users to browse sweets, add items to a cart, make secure payments, and place orders online.</li>
+                </ul>
+            </div>
+            <div class="proj-item">
+                <div class="proj-header">
+                    <span>Farm Expense Tracker — Full Stack Project</span>
+                    <span>MAR-2025</span>
+                </div>
+                <div class="proj-sub">
+                    <span>React, Node.js, Express.js, MongoDB, Git</span>
+                </div>
+                <ul>
+                    <li>Developed a web application that helps farmers track crop expenses and income, calculate profit or loss, and view market prices of crops, vegetables, and fruits.</li>
+                </ul>
+            </div>
+            <div class="proj-item" style="margin-bottom: 0;">
+                <div class="proj-header">
+                    <span>Event Ticket Booking System — Java Console Application</span>
+                    <span>FEB-2026</span>
+                </div>
+                <div class="proj-sub">
+                    <span>Java, MVC, File Handling</span>
+                </div>
+                <ul>
+                    <li>Developed a Java-based ticket booking system that enables users to browse events, book or cancel tickets, and store booking details permanently using file handling.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Internship</div>
+            <div class="intern-header">
+                <span>Full Stack Development — ARTIFAI TECH</span>
+                <span>JUL 7-14 2025</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title">Achievements & Certifications</div>
+            <ul>
+                <li>Certified in Java Intermediate via Unstop - demonstrated strong proficiency in core Java and OOP concepts.</li>
+                <li>Certified in JavaScript ES6 with AI via Unstop - applied modern JS features in practical AI-assisted workflows.</li>
+                <li>Solved 150+ problems on LeetCode, strengthening skills in data structures, algorithms, and problem solving.</li>
+                <li>Built 2 full-stack web applications and 1 Java console project independently as an undergraduate student.</li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="section-title">Area of Interest</div>
+            <div class="area-interest">
+                <div class="interest-line">
+                    <span class="interest-label">Interests:</span>
+                    <span class="interest-val">Problem Solving, Learning New Technologies</span>
+                </div>
+                <div class="interest-line">
+                    <span class="interest-label">Hobbies:</span>
+                    <span class="interest-val">Playing Cricket, Listening to Music, Watching Movies</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
